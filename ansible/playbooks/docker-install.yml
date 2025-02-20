@@ -1,16 +1,16 @@
-- hosts: development
+- hosts: production
   become: true
   tasks:
     - name: Update packages
       yum:
-        name: '*'
+        name: "*"
         state: latest
       become: true
 
     - name: Install Docker
       yum:
         name: docker
-        state: absent
+        state: present
       become: true
 
     - name: Start Docker service
