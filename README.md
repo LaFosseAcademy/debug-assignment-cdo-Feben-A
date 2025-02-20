@@ -19,8 +19,14 @@ To configure EC2 instance you will first need to
  3. Run `ansible-playbook playbooks/docker-run.yml`
 
 
- ## Application
+ ## Endpoints 
 
- To access to deployed application open web browser to:
+ Examples endpoints which should be reachable:
+
+- <ec2-instance-ipv4-ip-address>:3000/tour-de-france/cyclists
+- <ec2-instance-ipv4-ip-address>:3000/tour-de-france/teams
+
+
+
 
 
