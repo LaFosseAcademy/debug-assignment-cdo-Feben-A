@@ -1,4 +1,4 @@
-- hosts: development
+- hosts: production
   become: true
   tasks:
     - name: Update packages
