@@ -15,7 +15,7 @@ resource "aws_security_group_rule" "http_ingress" {
   security_group_id = aws_security_group.http_server_sg.id
 }
 
-resource "aws_security_group_rule" "ssh_ingres" {
+resource "aws_security_group_rule" "ssh_ingress" {
   type              = "ingress"
   from_port         = 22
   to_port           = 22
